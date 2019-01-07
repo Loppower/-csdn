@@ -3,6 +3,7 @@ setTimeout(function(){
   if (window.location.host.search('csdn') !== -1) {
     if(confirm("纯净版csdn?")){
       console.log("csdn去广告")
+      document.getElementById('btn-readmore').click();//先点击阅读更多的按钮，把隐藏的内容显示出来
       var aside = document.getElementsByTagName('aside');
       var recommendRight = document.getElementsByClassName('recommend-right');
       var toolBox = document.getElementsByClassName('tool-box');
